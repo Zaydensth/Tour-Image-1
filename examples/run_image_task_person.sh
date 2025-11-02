@@ -1,22 +1,22 @@
 # Unique task identifier
-TASK_ID="9a877904-5fe9-402a-1234-be5eb1b51f7e"
+TASK_ID="fd97f02f-82c5-40dd-bee7-73ff18fcf39c"
 
 # Base model to fine-tune (from HuggingFace)
-MODEL="mhnakif/fluxunchained-dev"
+MODEL="stablediffusionapi/omnium-sdxl"
 
 # Dataset ZIP file location (must be a ZIP file with images)
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/562149dcffb6b9a7_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251029%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251029T234639Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ce120fe964b74b3bb04c2ceae227086298538cd9d546dc7cd206d93068e8afc4"
+DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/93c2937d8f60d917_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251029%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251029T185928Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10268535df37757e9b9088fd879105458dc8879c11b8e8a5964caf9072a62866"
 
 # Model type: "sdxl" or "flux"
-MODEL_TYPE="flux"
+MODEL_TYPE="sdxl"
 
 # Optional: Repository name for the trained model
-EXPECTED_REPO_NAME="9a877904-5fe9-402a-1234-be5eb1b51f7e"
+EXPECTED_REPO_NAME="fd97f02f-82c5-40dd-bee7-73ff18fcf39c"
 
 # For uploading the outputs
 HUGGINGFACE_TOKEN="Your Huggingface Token"
 HUGGINGFACE_USERNAME="Your Huggingface Username"
-EXPECTED_REPO_NAME="imagetest"
+EXPECTED_REPO_NAME="fd97f02f-82c5-40dd-bee7-73ff18fcf39c"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"

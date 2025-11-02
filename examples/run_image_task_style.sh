@@ -1,22 +1,22 @@
 # Unique task identifier
-TASK_ID="9a877904-5fe9-402a-1234-be5eb1b51f7e"
+TASK_ID="ee120809-8765-429b-b619-7842831442e2"
 
 # Base model to fine-tune (from HuggingFace)
-MODEL="mhnakif/fluxunchained-dev"
+MODEL="dataautogpt3/CALAMITY"
 
 # Dataset ZIP file location (must be a ZIP file with images)
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/562149dcffb6b9a7_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251029%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251029T234639Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ce120fe964b74b3bb04c2ceae227086298538cd9d546dc7cd206d93068e8afc4"
+DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/0fbc5345d79062e6_test_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251029%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251029T192436Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59641d7597278c39d8902a210520085ca66991759e05ab7c3da3414f868420f2"
 
 # Model type: "sdxl" or "flux"
-MODEL_TYPE="flux"
+MODEL_TYPE="sdxl"
 
 # Optional: Repository name for the trained model
-EXPECTED_REPO_NAME="9a877904-5fe9-402a-1234-be5eb1b51f7e"
+EXPECTED_REPO_NAME="ee120809-8765-429b-b619-7842831442e2"
 
 # For uploading the outputs
 HUGGINGFACE_TOKEN="Your Huggingface Token"
 HUGGINGFACE_USERNAME="Your Huggingface Username"
-EXPECTED_REPO_NAME="imagetest"
+EXPECTED_REPO_NAME="ee120809-8765-429b-b619-7842831442e2"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"
